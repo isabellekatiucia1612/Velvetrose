@@ -1,0 +1,335 @@
+:root {
+    --cream: #F8F3ED;
+    --beige: #E8D8C8;
+    --wine: #70263D;
+    --red: #A64050;
+    --rose: #C58B91;
+    --gold: #B89A65;
+    --text: #332520;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.announcement {
+    background-color: var(--wine);
+    color: var(--cream);
+    text-align: center;
+    padding: 12px;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+header {
+    padding: 35px 8%;
+    text-align: center;
+    border-bottom: 1px solid var(--beige);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: var(--wine);
+}
+
+.logo span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--wine);
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 12%;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248,243,237,0.96),
+            rgba(248,243,237,0.65)
+        );
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 75px);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--wine);
+}
+
+.hero-description {
+    margin-top: 25px;
+    line-height: 1.9;
+    font-size: 14px;
+    max-width: 450px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    background-color: var(--wine);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 17px 30px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--red);
+}
+
+.categories,
+.founders {
+    text-align: center;
+    padding: 100px 8%;
+}
+
+.categories h2,
+.founders h2,
+.about h2,
+.financial h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: var(--wine);
+    margin-bottom: 25px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.category-card {
+    background-color: var(--beige);
+    padding: 70px 20px;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--wine);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.category-card p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.about {
+    background-color: #EDE2D7;
+    padding: 100px 12%;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content p:not(.eyebrow) {
+    line-height: 2;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--wine);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.founders-intro {
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.founder-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+}
+
+.founder-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--wine);
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.founder-card p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.financial {
+    background-color: var(--wine);
+    color: var(--cream);
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.financial h2 {
+    color: var(--cream);
+}
+
+.financial p:not(.eyebrow) {
+    max-width: 650px;
+    margin: auto;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.financial .button {
+    background-color: var(--cream);
+    color: var(--wine);
+}
+
+.financial .button:hover {
+    background-color: var(--beige);
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--cream);
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--wine);
+    letter-spacing: 4px;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 25px 5%;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 8%;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories,
+    .founders {
+        padding: 70px 7%;
+    }
+
+    .categories h2,
+    .founders h2,
+    .about h2,
+    .financial h2 {
+        font-size: 35px;
+    }
+
+    .founders-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about {
+        padding: 70px 8%;
+    }
+
+    .financial {
+        padding: 70px 8%;
+    }
+}
